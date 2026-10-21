@@ -17,3 +17,16 @@ build
 
 # Fredrin's machine-local tool state — never project content
 .fredrin/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# verification evidence (screenshots, reports)
+evidence/
+
+# verify-app skill runtime files
+.verify-app.pid
+evidence-server.log

@@ -1,0 +1,58 @@
+.header {
+  border-bottom: 1px solid var(--rule);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 22px var(--gutter);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px 32px;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-family: var(--font-serif-stack);
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 0;
+  font-size: 0.9375rem;
+}
+
+.list li + li::before {
+  content: "·";
+  color: var(--muted);
+  padding: 0 12px;
+}
+
+.list a {
+  color: var(--ink);
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+.list a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .inner {
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
+}
